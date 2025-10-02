@@ -1,0 +1,33 @@
+
+wheel
+setuptools
+
+# Núcleo científico
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+scipy==1.11.4
+
+# Visualización
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.22.0
+
+# Jupyter
+jupyterlab==4.2.5
+notebook==7.2.2
+ipykernel==6.29.5
+
+# Deep Learning (elige TF por simplicidad)
+tensorflow==2.17.0
+
+# Series de tiempo / utilidades
+statsmodels==0.14.2
+tqdm==4.66.4
+python-dotenv==1.0.1
+
+# Kaggle CLI para bajar data del Task (opcional)
+kaggle==1.6.14
+
+setuptools==70.0.0
+setuptools-scm
