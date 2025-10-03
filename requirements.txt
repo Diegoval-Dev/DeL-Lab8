@@ -1,12 +1,12 @@
-
+# Core Python utilities
+setuptools>=70.0.0
 wheel
-setuptools
 
-# Núcleo científico
+# Ciencia de datos
 numpy==1.26.4
 pandas==2.2.2
-scikit-learn==1.4.2
 scipy==1.11.4
+scikit-learn==1.4.2
 
 # Visualización
 matplotlib==3.8.4
@@ -18,16 +18,12 @@ jupyterlab==4.2.5
 notebook==7.2.2
 ipykernel==6.29.5
 
-# Deep Learning (elige TF por simplicidad)
-tensorflow==2.17.0
+# Deep Learning con GPU (binarios oficiales con CUDA/cuDNN integrados)
+tensorflow[and-cuda]==2.17.0
 
-# Series de tiempo / utilidades
+# Modelos estadísticos / series de tiempo
 statsmodels==0.14.2
+
+# Extras útiles
 tqdm==4.66.4
 python-dotenv==1.0.1
-
-# Kaggle CLI para bajar data del Task (opcional)
-kaggle==1.6.14
-
-setuptools==70.0.0
-setuptools-scm
