@@ -3,27 +3,40 @@ setuptools>=70.0.0
 wheel
 
 # Ciencia de datos
-numpy==1.26.4
-pandas==2.2.2
-scipy==1.11.4
-scikit-learn==1.4.2
+numpy>=1.21.0,<2.0.0
+pandas>=2.0.0,<3.0.0
+scipy>=1.7.0,<2.0.0
+scikit-learn>=1.0.0,<2.0.0
 
 # Visualización
-matplotlib==3.8.4
-seaborn==0.13.2
-plotly==5.22.0
+matplotlib>=3.5.0,<4.0.0
+seaborn>=0.11.0,<1.0.0
+plotly>=5.0.0,<6.0.0
 
 # Jupyter
-jupyterlab==4.2.5
-notebook==7.2.2
-ipykernel==6.29.5
+jupyterlab>=4.0.0,<5.0.0
+notebook>=7.0.0,<8.0.0
+ipykernel>=6.0.0,<7.0.0
+ipywidgets>=8.0.0,<9.0.0
 
-# Deep Learning con GPU (binarios oficiales con CUDA/cuDNN integrados)
-tensorflow[and-cuda]==2.17.0
+# Deep Learning - macOS optimized
+# Para Mac con Apple Silicon (M1/M2/M3)
+tensorflow-macos>=2.13.0,<3.0.0; platform_machine=="arm64"
+tensorflow-metal>=1.0.0,<2.0.0; platform_machine=="arm64"
+
+# Para Mac Intel y otras plataformas
+tensorflow>=2.13.0,<3.0.0; platform_machine!="arm64"
 
 # Modelos estadísticos / series de tiempo
-statsmodels==0.14.2
+statsmodels>=0.13.0,<1.0.0
+
+# Para interpretabilidad del modelo (SHAP)
+shap>=0.42.0,<1.0.0
 
 # Extras útiles
-tqdm==4.66.4
-python-dotenv==1.0.1
+tqdm>=4.60.0,<5.0.0
+python-dotenv>=1.0.0,<2.0.0
+
+# Soporte adicional para macOS
+# Para evitar conflictos de dependencias en macOS
+protobuf>=3.20.0,<5.0.0
